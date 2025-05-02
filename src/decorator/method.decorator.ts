@@ -1,4 +1,4 @@
-function LogMethod(target: any, propertyKey: string, descriptor: PropertyDescriptor): void {
+export function LogMethod(target: any, propertyKey: string, descriptor: PropertyDescriptor): void {
     const originalMethod = descriptor.value;
   
     descriptor.value = function(...args: any[]) {
